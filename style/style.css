@@ -92,12 +92,18 @@
   .hero-section {
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    justify-content: space-around;
+
     margin: 0px 80px 0px 80px;
     
     
   }
   .text-content{
+    flex: 1;
+    padding: 20px;
+    
     width: 40%;
     
 
@@ -142,9 +148,359 @@
     max-width: 100%;
     height: auto;
   }
-  /* Responsive for small device */
+  /* Curricullum Section */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    .curriculum{
+      padding: 50px 20px;
+      background-color: #eef0f3;
+    }
+    .title{
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .standard-curriculum{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card-one{
+      background:rgba(222, 245, 255, 0.94);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px  6px rgba(0, 0, 0,0,1);
+      width: 300px;
+      text-align: center;
+      transition: transformo.3s;
+    }
+    .card-two{
+      background:rgba(255, 244, 220, 1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px  6px rgba(0, 0, 0,0,1);
+      width: 300px;
+      text-align: center;
+      transition: transformo.3s;
+    }
+    .card-three{
+      background:rgba(242, 232, 255, 1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px  6px rgba(0, 0, 0,0,1);
+      width: 300px;
+      text-align: center;
+      transition: transformo.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 50px;
 
-  /* Hero section responsive */
-  @media screen and  (ma) {
-    
+    }
+    .card h3  {
+      font-size: 20px;
+      color: #333;
+    }
+    .card p {
+      font-size: 14px;
+      color: #666;
+    }
+    .card-one a {
+      /* display: block; */
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: rgba(100, 200, 255, 1);
+    }
+     .card-two a {
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: rgba(240, 170, 0, 1);
+
+     }
+     .card-three a {
+      padding-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: rgba(135, 0, 255, 1);
+
+     }
+    .carousel-contorls{
+      margin-top: 20px;
+      justify-content: center;
+
+    }
+    .carousel-contorls button {
+      background-color: #ffcc00;
+      border: none;
+      padding: 10px 15px;
+      font-size: 18px;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 5px;
+      transition:background 0.3s;
+    }
+    .carousel-contorls button:hover {
+      background-color: #ff9900;
+    }
+
+
+    /* other section */
+
+   
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f8f8f8, #ffebcd);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Section Styling */
+.stories {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Grid Layout */
+.stories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Story Card */
+.story {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: left;
+}
+
+.story.large {
+  grid-column: span 2;
+}
+
+.story img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.date {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: white;
+  margin: 10px 0;
+}
+
+.blue {
+  background-color: #3B82F6;
+}
+
+.green {
+  background-color: #68A063;
+}
+
+/* Button Styling */
+.view-all {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-all:hover {
+  background: #333;
+}
+  
+  .story.large {
+      grid-column: span 1;
+}
+            /* Footer section */
+            /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer styling */
+
+footer {
+  background-color: #00AEEF;
+  color: white;
+  padding: 40px 20px;
+}
+
+/* Container to align sections */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Footer sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+/* Logo styling */
+.logo-foot {
+  display: flex;
+  align-items: center;
+}
+
+.logo-foot img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* .logo h2 span {
+  font-weight: bold;
+} */
+ .logo-foot img {
+  width: 80px;
+  height: 80px;
+ }
+ .kid-edu {
+  font-weight: bold;
+  font-size: larger;
+
+ }
+
+/* About text */
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Links styling */
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Responsive Design */
+
+
+
+ /* Responsive for small device */
+ /* Hero section responsive */
+ @media (max-width: 768px){
+  .hero-section{
+    flex-direction: column;
+    text-align: center;
   }
+
+ }
+
+/* Curricullum Section Responsive */
+  @media (max-width: 768px){
+    /* .Standard-curriculum{ */
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content img {
+      max-width: 300px;
+
+    }
+    .text-content h1 {
+      font-size: 1.5rem;
+    }
+    .text-content p{
+      font-size: 0.9rem;
+
+    }
+    .Enroll-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+  }
+/* other section responsive */
+@media (max-width: 768px) {
+  .stories-container {
+      grid-template-columns: 2fr;
+  }
+}
+/* footer Section Responsive */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .logo {
+      justify-content: center;
+  }
+
+  .social-icons {
+      justify-content: center;
+  }
+}
